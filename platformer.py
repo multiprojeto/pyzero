@@ -350,4 +350,4 @@ class SpriteActor(Actor):
             self._transform_surf()
             game.screen.blit(self._surf, self.topleft)
         else:
-            game.screen.blit(self._surf, self.topleft)# Escreva o seu código aqui :-)
+            game.screen.blit(self._surf, self.topleft)
