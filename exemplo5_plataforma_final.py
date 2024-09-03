@@ -31,8 +31,8 @@ items = build("platformer_items.csv", 16)
 # define Sprites
 # Sprite("sprite_image.png", start, num_frames, color_key, refresh)
 color_key = (0, 0, 0)  # leave like this unless background shows up
-player_idle = Sprite("owlet_monster_idle.png", (0, 0, 32, 32), 4, color_key, 5)
-player_walk = Sprite("owlet_monster_run.png", (0, 0, 32, 32), 6, color_key, 5)
+player_idle = Sprite("octocat_idle.png", (0, 0, 48, 48), 4, color_key, 5)
+player_walk = Sprite("octocat_run.png", (0, 0, 48, 48), 7, color_key, 5)
 
 # define SpriteActor
 player = SpriteActor(player_idle)
@@ -49,14 +49,14 @@ def draw():
     screen.clear()  # clears the screen
     screen.fill("black")  # fills background col
     # draw platforms
-    
+
 
     for bg in bgs:
         bg.draw()
 
     for platform in platforms:
         platform.draw()
-        
+
     for item in items:
         item.draw()
 
